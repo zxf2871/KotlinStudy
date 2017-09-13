@@ -22,6 +22,7 @@ class MainActivity : BaseActivity(), View.OnClickListener {
         mFirstTV = findViewById(R.id.tv_first) as TextView
         mDataRev = findViewById(R.id.rev_data) as RecyclerView
         mBtnTest.setOnClickListener(this)
+        mFirstTV!!.setOnClickListener{toast("click")}
     }
 
     override fun onClick(v: View?) {

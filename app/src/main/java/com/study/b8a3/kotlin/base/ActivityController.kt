@@ -1,8 +1,8 @@
 package com.study.b8a3.kotlin.base
 
 import android.app.Activity
-
-import java.util.ArrayList
+import com.study.b8a3.kotlin.bean.Person
+import java.util.*
 
 /**
  * Created by B8A3 on 2017/4/9.
@@ -29,4 +29,7 @@ object ActivityController {
                 .onEach { it.finish() }
         android.os.Process.killProcess(android.os.Process.myPid())
     }
+
+    val f1 = Person("Jim", 20, "")
+    var f2 = f1.copy(name = "Jam")
 }
