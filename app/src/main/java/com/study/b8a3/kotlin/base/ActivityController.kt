@@ -1,7 +1,6 @@
 package com.study.b8a3.kotlin.base
 
 import android.app.Activity
-import com.study.b8a3.kotlin.bean.Person
 import java.util.*
 
 /**
@@ -29,7 +28,4 @@ object ActivityController {
                 .onEach { it.finish() }
         android.os.Process.killProcess(android.os.Process.myPid())
     }
-
-    val f1 = Person("Jim", 20, "")
-    var f2 = f1.copy(name = "Jam")
 }
